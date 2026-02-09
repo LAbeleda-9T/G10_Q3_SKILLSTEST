@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <!-- Pyscript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+<style>
+
+#output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 5px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Account Creation</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">  <!-- Changed type to "password" for better UX and to allow any characters -->
+    <input type="button" py-click="verify_account" value="verify_account">
+
+    
+</div>
+
+<div id="output"></div>
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
